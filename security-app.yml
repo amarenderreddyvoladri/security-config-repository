@@ -1,0 +1,7 @@
+# security-app.yml
+jwt:
+  access-token-expiration-ms: 900000
+
+security:
+  account:
+    max-login-attempts: 5
