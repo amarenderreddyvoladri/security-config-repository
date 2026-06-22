@@ -1,0 +1,10 @@
+# springboot-security-jwt-rbac-app1.yml
+jwt:
+  access-token-expiration-ms: 900000
+  refresh-token-expiration-ms: 604800000
+
+security:
+  account:
+    max-login-attempts: 5
+    lock-duration-ms: 900000
+    failed-attempt-expiry-minutes: 30
