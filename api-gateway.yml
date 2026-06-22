@@ -1,0 +1,9 @@
+# api-gateway.yml
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: security-service
+          uri: lb://springboot-security-jwt-rbac-app1
+          predicates:
+            - Path=/api/v1/**
